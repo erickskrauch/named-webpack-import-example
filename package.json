@@ -1,0 +1,19 @@
+{
+  "name": "named-webpack-import-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:erickskrauch/named-webpack-import-example.git",
+  "author": "ErickSkrauch <erickskrauch@yandex.ru>",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server --mode=development --progress --colors",
+    "build": "rm -rf dist/ && webpack --mode=production --progress --colors"
+  },
+  "devDependencies": {
+    "file-loader": "^3.0.1",
+    "my-loader": "file:./my-loader",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1"
+  }
+}
